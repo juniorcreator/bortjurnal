@@ -2032,7 +2032,7 @@ template {
   max-width: 817px;
   width: 100%;
   background-color: #1e222b;
-  padding: 30px 5px 5px 42px;
+  padding: 0px 5px 5px 42px;
   max-height: 100vh;
   overflow: hidden;
 }
@@ -2050,9 +2050,8 @@ template {
 
 .bell {
   position: absolute;
-  z-index: 9;
-  right: 28px;
-  top: 0;
+  right: 37px;
+  top: 30px;
   cursor: pointer;
 }
 .bell__text {
