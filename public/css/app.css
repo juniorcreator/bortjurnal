@@ -2100,7 +2100,6 @@ template {
   -webkit-justify-content: flex-end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding-bottom: 18px;
 }
 .car__title {
   position: relative;
@@ -2238,6 +2237,7 @@ template {
   border-bottom: 1px solid #2f343f;
   padding-bottom: 26px;
   margin-bottom: 24px;
+  margin-top: 18px;
 }
 .car-planner__wrap {
   display: -webkit-box;
