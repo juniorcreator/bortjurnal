@@ -12,6 +12,13 @@ html, body {
 body {
   overflow: hidden;
   background-color: #1E222B;
+
+}
+.home-page {
+  @include md_1190 {
+    max-height: 100vh;
+    overflow: hidden;
+  }
 }
 span {
   display: inline-block;

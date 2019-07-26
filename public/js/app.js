@@ -11019,7 +11019,7 @@ function () {
       }
 
       if ($(window).width() < 1199) {
-        right_side.mCustomScrollbar(set);
+        $('.home-page').mCustomScrollbar(set);
         console.log('less');
       }
     }

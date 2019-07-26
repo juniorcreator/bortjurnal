@@ -209,6 +209,14 @@
     font-weight: 400;
     line-height: 19.14px;
   }
+  @include lg_1750{
+    &__num {
+      font-size: 24px;
+    }
+    &__str {
+      font-size: 18px;
+    }
+  }
   @include lg_1441 {
     &__num {
       font-size: 18px;

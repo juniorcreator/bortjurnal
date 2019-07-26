@@ -1,6 +1,9 @@
 @mixin lg_1920 {
   @media (max-width: 1920px) { @content; }
 }
+@mixin lg_1750 {
+  @media (max-width: 1750px) { @content; }
+}
 @mixin lg_1500 {
   @media (max-width: 1500px) { @content; }
 }
