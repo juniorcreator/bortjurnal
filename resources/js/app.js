@@ -9,12 +9,21 @@ class App {
   scroll() {
     let mid = $('.block_details');
     let filters = $('.block_filter');
+    let right_side = $('.right-side');
     let set = {
       scrollInertia:200,
       moveDragger:true,
+      autoHideScrollbar: true,
     };
-    mid.mCustomScrollbar(set);
-    filters.mCustomScrollbar(set);
+
+    if($(window).width() > 1199) {
+      mid.mCustomScrollbar(set);
+      filters.mCustomScrollbar(set);
+    }
+    if($(window).width() < 1199) {
+      right_side.mCustomScrollbar(set);
+      console.log('less');
+    }
   };
   select() {
     let selects = $('.custom-select');

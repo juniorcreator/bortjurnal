@@ -51,4 +51,20 @@
       }
     }
   }
+  @include lg_1441 {
+    &__list {
+      flex-wrap: wrap;
+    }
+    &__item {
+      margin-right: 10px;
+      a {
+        padding: 14px 0 0 0;
+        font-size: 14px;
+        line-height: 14px;
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
 }

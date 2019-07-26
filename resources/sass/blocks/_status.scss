@@ -24,6 +24,9 @@
       border-bottom: none;
     }
   }
+  @include lg_1441 {
+    padding: 32px 25px 34px 25px;
+  }
 }
 .status-date {
   color: #646464;
@@ -75,7 +78,7 @@
     }
   }
   &__sign {
-    margin-left: auto;
+    margin-left: 15px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -143,5 +146,10 @@
   }
   &__minus{
 
+  }
+  @include lg_1441 {
+    &__position {
+      font-size: 19px;
+    }
   }
 }

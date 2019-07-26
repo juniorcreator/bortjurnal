@@ -4,11 +4,33 @@
   align-items: flex-start;
   background-color: #1E222B;
 }
+.right-side {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  @include md_1190 {
+    flex-direction: column;
+    max-height: 100vh;
+    overflow: hidden;
+  }
+}
 .block_nav {
   background-color: #252a34;
   min-width: 298px;
   width: 298px;
   padding-top: 40px;
+  @include lg_1441 {
+    min-width: 250px;
+    width: 250px;
+  }
+  @include md_1190 {
+    min-width: 70px;
+    width: 70px;
+    padding-top: 25px;
+    height: 100vh;
+    position: relative;
+  }
 }
 .logo{
   text-align: center;
@@ -18,14 +40,27 @@
     max-width: 100%;
 
   }
+  @include md_1190 {
+    padding: 0 5px;
+    position: absolute;
+    bottom: 25px;
+    margin-bottom: 0;
+  }
 }
 .block_details {
   max-width: 817px;
   width: 100%;
   background-color: #1e222b;
-  padding: 30px 35px 5px 42px;
+  padding: 30px 5px 5px 42px;
   max-height: 100vh;
   overflow: hidden;
+  @include lg_1441 {
+    padding: 30px 15px 5px 15px;
+  }
+  @include md_1190 {
+    max-width: 100%;
+    max-height: 100%;
+  }
 }
 /////////////////////////
 .bell {
@@ -52,7 +87,23 @@
 .car-view {
   position: relative;
   &__car {
-
+  }
+  .block_filter__nav {
+    display: none;
+  }
+  @include md_1190 {
+    .block_filter__nav {
+      display: block;
+    }
+    .filter-nav {
+      &__item {
+        a {
+          &:after {
+            display: block;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -153,6 +204,14 @@
     font-weight: 400;
     line-height: 19.14px;
   }
+  @include lg_1441 {
+    &__num {
+      font-size: 18px;
+    }
+    &__str {
+      font-size: 15px;
+    }
+  }
 }
 /// planner-item
 .car-planner {
@@ -245,6 +304,20 @@
     border-radius: 50%;
     position: relative;
     top: -3px;
+  }
+}
+
+.mCSB_inside > .mCSB_container {
+  margin-right: 20px;
+}
+body {
+  @include md_1190 {
+    .mCustomScrollBox.mCS-light.mCSB_vertical.mCSB_inside {
+      width: 100%;
+    }
+    .mCSB_inside > .mCSB_container {
+      margin-right: 5px;
+    }
   }
 }
 

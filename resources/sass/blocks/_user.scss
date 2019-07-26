@@ -49,4 +49,30 @@
       color: #000;
     }
   }
+  @include md_1190 {
+    flex-direction: column;
+    padding: 0 5px 25px 5px;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    &__content {
+      margin-left: 0;
+    }
+    &__name {
+      display: none;
+    }
+    &__log {
+      flex-direction: column;
+    }
+    .btn {
+      padding: 1px 10px;
+      letter-spacing: 0.33px;
+      line-height: 19px;
+    }
+    &__menu {
+      margin-left: 0;
+      margin-top: 15px;
+    }
+  }
 }

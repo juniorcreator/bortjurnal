@@ -1,29 +1,18 @@
 .nav {
   margin-top: 48px;
+  padding-left: 29px;
+  padding-right: 26px;
   &__list {
 
   }
   &__item {
-    margin-bottom: 36px;
-    padding: 0 37px 0 32px;
+    margin-bottom: 10px;
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
     position: relative;
     &:last-child {
-      margin-bottom: 30px;
-    }
-    &:before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: -13px;
-      width: 4px;
-      height: 45px;
-      background-color: #FF8F00;
-      opacity: 0;
-      visibility: hidden;
-      transition: opacity .3s;
+      margin-bottom: 16px;
     }
     &:hover:before {
       opacity: 1;
@@ -31,40 +20,65 @@
     }
     &--drop {
       position: relative;
-      &:after {
-        content: "\2039";
-        position: absolute;
-        color: #848586;
-        right: 31px;
-        top: 1px;
-        transform: rotate(90deg) translateY(-3px);
+      a {
+        &:after {
+          content: "\2039";
+          position: absolute;
+          color: #848586;
+          right: 7px;
+          top: 14px;
+          transform: rotate(90deg) translateY(-3px);
+        }
       }
       &.open {
-        &:after {
+        a:after {
           transform: rotate(-90deg);
         }
         ul {
-          margin-left: 46px;
-          margin-top: 30px;
           height: auto;
+          margin: 14px 0 19px 40px;
         }
       }
     }
     img {
-      margin-right: 25px;
       max-width: 20px;
       object-fit: contain;
-      width: 9%;
     }
     a {
+      padding: 9px 20px 9px 40px;
+      position: relative;
       color: #A4946A;
       font-family: 'OpenSans-Regular';
       font-size: 16px;
       font-weight: 400;
       letter-spacing: 0.32px;
-      width: 80%;
-      overflow: hidden;
-      text-overflow: ellipsis;
+      width: 100%;
+      span {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 24px;
+      }
+      &:before {
+        content: '';
+        position: absolute;
+        left: -28px;
+        top: 0;
+        width: 4px;
+        height: 45px;
+        background-color: #FF8F00;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity .3s;
+      }
+      img {
+        position: absolute;
+        left: 0;
+        top: 14px;
+      }
+      &:hover:before {
+        opacity: 1;
+        visibility: visible;
+      }
     }
     ul {
       height: 0;
@@ -78,8 +92,12 @@
         letter-spacing: 0.28px;
         font-family: 'OpenSans-Light';
         a {
+          padding: 0;
           text-overflow: unset;
           font-size: 14px;
+          &:before, &:after {
+            display: none;
+          }
         }
         &:last-child {
           margin-bottom: 0;
@@ -90,13 +108,37 @@
       a {
         color: #FF8F00;
         font-family: 'OpenSans-Bold';
+        &:before {
+          opacity: 1;
+          visibility: visible;
+        }
       }
-      &:before {
-        opacity: 1;
-        visibility: visible;
+
+    }
+  }
+  @include md_1190 {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 25px;
+    &__item {
+      margin-bottom: 25px;
+      a {
+        text-align: center;
+        padding: 5px;
+        &:before, &:after {
+          display: none;
+        }
+        span {
+          display: none;
+        }
+        img {
+          position: static;
+        }
+      }
+      ul {
+        display: none;
       }
     }
-
   }
 }
 
@@ -108,7 +150,7 @@
   cursor: pointer;
   margin-bottom: 90px;
   img {
-    margin-right: 30px;
+    margin-right: 22px;
   }
   span {
     position: absolute;
@@ -125,6 +167,7 @@
     color: #A4946A;
     padding: 6px 0 6px 15px;
     border: 1px solid transparent;
+    width: 100%;
     &:focus {
       border-color: #A4946A;
     }
@@ -134,8 +177,19 @@
   }
   &__form {
     position: relative;
+    padding-right: 29px;
   }
   &.on span {
     opacity: 0;
+  }
+  @include md_1190 {
+    img {
+      margin: 0;
+    }
+    &__form {
+      span {
+        display: none;
+      }
+    }
   }
 }

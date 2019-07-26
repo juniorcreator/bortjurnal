@@ -11006,12 +11006,22 @@ function () {
     value: function scroll() {
       var mid = $('.block_details');
       var filters = $('.block_filter');
+      var right_side = $('.right-side');
       var set = {
         scrollInertia: 200,
-        moveDragger: true
+        moveDragger: true,
+        autoHideScrollbar: true
       };
-      mid.mCustomScrollbar(set);
-      filters.mCustomScrollbar(set);
+
+      if ($(window).width() > 1199) {
+        mid.mCustomScrollbar(set);
+        filters.mCustomScrollbar(set);
+      }
+
+      if ($(window).width() < 1199) {
+        right_side.mCustomScrollbar(set);
+        console.log('less');
+      }
     }
   }, {
     key: "select",
