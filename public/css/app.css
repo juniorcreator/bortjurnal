@@ -2130,6 +2130,11 @@ template {
           transform: translate(-50%, -50%);
   z-index: 1;
 }
+@media (max-width: 1190px) {
+  .car__img {
+    text-align: center;
+  }
+}
 
 .car-details__wrap-details {
   display: -webkit-box;
