@@ -34,6 +34,7 @@
     @include md_1190 {
       &__search {
         flex-direction: row;
+        margin-bottom: 0;
       }
     }
   }

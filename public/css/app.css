@@ -2756,6 +2756,7 @@ a {
     -webkit-flex-direction: row;
         -ms-flex-direction: row;
             flex-direction: row;
+    margin-bottom: 0;
   }
 }
 @media (max-width: 1190px) {

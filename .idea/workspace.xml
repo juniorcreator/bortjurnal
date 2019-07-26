@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ab99ce2-dd30-498d-bb4f-8dbf6cab3477" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_base.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/sass/blocks/_block_filter.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/blocks/_block_filter.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -141,8 +138,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/resources/sass/blocks/_block_filter.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="54">
-                  <caret line="3" column="27" lean-forward="true" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+                <state relative-caret-position="324">
+                  <caret line="36" column="25" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
                 </state>
               </provider>
             </entry>
@@ -323,12 +320,12 @@
       <option name="presentableId" value="Default" />
       <updated>1564051165977</updated>
       <workItem from="1564051167271" duration="36618000" />
-      <workItem from="1564126346742" duration="23116000" />
+      <workItem from="1564126346742" duration="23216000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59734000" />
+    <option name="totallyTimeSpent" value="59834000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-5" y="188" width="1872" height="856" extended-state="0" />
@@ -571,8 +568,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/sass/blocks/_block_filter.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="27" lean-forward="true" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+        <state relative-caret-position="324">
+          <caret line="36" column="25" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
         </state>
       </provider>
     </entry>
