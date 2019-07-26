@@ -115,6 +115,8 @@
   justify-content: flex-end;
   padding-bottom: 18px;
   &__title {
+    position: relative;
+    z-index: 2;
     max-width: 200px;
     color: #c6c6c6;
     font-family: 'Roboto-Light';
@@ -126,15 +128,23 @@
   }
   &__img {
     position: absolute;
+    height: 100%;
     width: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     img {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 100%;
       max-width: 100%;
+      object-fit: contain;
     }
   }
   &__subtitle {
+    position: relative;
+    z-index: 2;
     max-width: 200px;
     color: #646363;
     font-family: 'OpenSans-Light';
