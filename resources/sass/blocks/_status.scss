@@ -152,4 +152,9 @@
       font-size: 19px;
     }
   }
+  @include md_1190 {
+    &__sign {
+      margin-left: auto;
+    }
+  }
 }

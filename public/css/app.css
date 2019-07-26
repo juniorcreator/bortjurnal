@@ -3245,4 +3245,9 @@ a {
     font-size: 19px;
   }
 }
+@media (max-width: 1190px) {
+  .status__sign {
+    margin-left: auto;
+  }
+}
 /*# sourceMappingURL=app.css.map*/
