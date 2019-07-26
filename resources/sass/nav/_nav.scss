@@ -120,6 +120,7 @@
     padding-left: 10px;
     padding-right: 10px;
     margin-top: 25px;
+    margin-bottom: 28px;
     &__item {
       margin-bottom: 25px;
       a {
@@ -183,10 +184,13 @@
     opacity: 0;
   }
   @include md_1190 {
+    padding-left: 0;
+    justify-content: center;
     img {
       margin: 0;
     }
     &__form {
+      display: none;
       span {
         display: none;
       }
