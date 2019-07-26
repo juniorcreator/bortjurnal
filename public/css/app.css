@@ -2756,6 +2756,8 @@ a {
     -webkit-flex-direction: row;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+  .block_filter .form-search {
     margin-bottom: 0;
   }
 }
