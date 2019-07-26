@@ -1866,7 +1866,7 @@ template {
 .nav-search input {
   background-color: transparent;
   color: #A4946A;
-  padding: 6px 0;
+  padding: 6px 0 6px 15px;
   border: 1px solid transparent;
 }
 .nav-search input:focus {
@@ -2597,30 +2597,55 @@ a {
   padding: 11.5px 10px;
   width: 100%;
   border: 1px solid transparent;
+  -webkit-transition: background-color 0.3s, color 0.3s;
+  -o-transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s;
+}
+.tabs__item a:hover {
+  color: #fff;
 }
 .tabs__item--all a {
   background-color: #ff8f00;
   color: #fff;
 }
+.tabs__item--all a:hover {
+  background-color: #ff8f00;
+}
 .tabs__item--wash a {
   color: #2254A1;
   border-color: #2254A1;
+}
+.tabs__item--wash a:hover {
+  background-color: #2254A1;
 }
 .tabs__item--azs a {
   color: #8caf41;
   border-color: #8caf41;
 }
+.tabs__item--azs a:hover {
+  background-color: #8caf41;
+}
 .tabs__item--direct a {
   color: #A66F4F;
   border-color: #A66F4F;
+}
+.tabs__item--direct a:hover {
+  background-color: #A66F4F;
 }
 .tabs__item--to a {
   color: #9F9653;
   border-color: #9F9653;
 }
+.tabs__item--to a:hover {
+  background-color: #9F9653;
+}
 .tabs__item--notices a {
   color: #fff;
   border-color: #fff;
+}
+.tabs__item--notices a:hover {
+  background-color: #fff;
+  color: #000;
 }
 @media (max-width: 1500px) {
   .tabs {

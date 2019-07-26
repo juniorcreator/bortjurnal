@@ -11034,10 +11034,25 @@ function () {
       });
     }
   }, {
+    key: "nav_search",
+    value: function nav_search() {
+      var a = $('.nav-search input');
+      a.on('input', function (e) {
+        var val = $(this).val().length;
+
+        if (val > 0) {
+          $('.nav-search').addClass('on');
+        } else {
+          $('.nav-search').removeClass('on');
+        }
+      });
+    }
+  }, {
     key: "init",
     value: function init() {
       this.select();
       this.scroll();
+      this.nav_search();
     }
   }]);
 

@@ -12,7 +12,7 @@ class App {
     let set = {
       scrollInertia:200,
       moveDragger:true,
-      };
+    };
     mid.mCustomScrollbar(set);
     filters.mCustomScrollbar(set);
   };
@@ -35,9 +35,22 @@ class App {
       }
     });
   };
+  nav_search() {
+    let a = $('.nav-search input');
+    a.on('input', function (e) {
+      let val = $(this).val().length;
+
+      if(val > 0) {
+        $('.nav-search').addClass('on');
+      }else {
+        $('.nav-search').removeClass('on');
+      }
+    })
+  };
   init () {
     this.select();
     this.scroll();
+    this.nav_search();
   }
 }
 let app = new  App();

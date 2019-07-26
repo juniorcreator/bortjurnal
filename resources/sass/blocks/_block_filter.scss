@@ -73,41 +73,64 @@
       padding: 11.5px 10px;
       width: 100%;
       border: 1px solid transparent;
+      transition: background-color .3s, color .3s;
+      &:hover {
+        color: #fff;
+      }
     }
     &--all {
       a {
         background-color: #ff8f00;
         color: #fff;
+        &:hover {
+          background-color: #ff8f00;
+        }
       }
     }
     &--wash {
       a {
         color: #2254A1;
         border-color: #2254A1;
+        &:hover {
+          background-color: #2254A1;
+        }
       }
     }
     &--azs {
       a {
         color: #8caf41;
         border-color: #8caf41;
+        &:hover {
+          background-color:  #8caf41;
+        }
       }
     }
     &--direct {
       a {
         color: #A66F4F;
         border-color: #A66F4F;
+        &:hover {
+          background-color:  #A66F4F;
+        }
       }
     }
     &--to {
       a {
         color: #9F9653;
         border-color: #9F9653;
+        &:hover {
+          background-color: #9F9653;
+        }
       }
     }
     &--notices {
       a {
         color: #fff;
         border-color: #fff;
+        &:hover {
+          background-color: #fff;
+          color: #000;
+        }
       }
     }
   }
