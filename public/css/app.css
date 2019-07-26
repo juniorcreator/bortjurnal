@@ -2574,9 +2574,9 @@ a {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 30px;
+  padding-bottom: 12px;
   border-bottom: 1px solid #2f343f;
-  margin-bottom: 13px;
+  margin-bottom: 21px;
 }
 .tabs__item {
   margin-bottom: 10px;
