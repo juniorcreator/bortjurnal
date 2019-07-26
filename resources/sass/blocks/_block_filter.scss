@@ -4,6 +4,7 @@
   padding: 0 30px 0 40px;
   max-height: 100vh;
   overflow: hidden;
+  position: relative;
   &__nav {
     display: flex;
     align-items: center;
@@ -49,13 +50,16 @@
 ////tabs
 .tabs {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   padding-bottom: 30px;
   border-bottom: 1px solid #2f343f;
-  margin-bottom: 23px;
+  margin-bottom: 13px;
   &__item {
-    width: calc((100% - 45px) / 6);
+    margin-bottom: 10px;
+   max-width: 113px;
+    width: 100%;
+    margin-right: 5px;
     &:last-child {
       margin-right: 0;
     }
@@ -106,6 +110,9 @@
         border-color: #fff;
       }
     }
+  }
+  @include lg_1500 {
+    flex-wrap: wrap;
   }
 }
 ///form search
@@ -211,4 +218,18 @@
       transform: rotate(180deg) translateY(62%);
     }
   }
+}
+
+.add-item {
+  position: fixed;
+  bottom: 21px;
+  right: 30px;
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #FF8F00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
