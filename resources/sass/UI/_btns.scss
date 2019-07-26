@@ -1,0 +1,57 @@
+.btn {
+  display: inline-block;
+  border: none;
+  outline: none;
+  text-align: center;
+  text-transform: capitalize;
+  transition: background .3s;
+  position: relative;
+  color: #c6c6c6;
+  font-family: 'OpenSans-Regular';
+  font-size: 11px;
+  font-weight: 400;
+  cursor: pointer;
+  &--log {
+    border-radius: 13px;
+    border: 1px solid #ffffff;
+    padding: 1px 21px;
+    letter-spacing: 0.33px;
+    line-height: 22px;
+  }
+  &--add-car {
+    padding: 11px 29px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ff8f00;
+    font-family: 'Roboto-Light';
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 24px;
+    border-radius: 24px;
+    border: 1px solid #ff8f00;
+    img {
+      margin-right: 10px;
+    }
+  }
+  &--period {
+    background-color: transparent;
+    border-radius: 16px;
+    border: 1px solid #ffffff;
+    color: #c6c6c6;
+    font-family: 'Roboto-Light';
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 22px;
+    letter-spacing: 0.36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 137px;
+    padding: 4px 10px 4px 13px;
+    img {
+      margin-left: 11px;
+    }
+  }
+}

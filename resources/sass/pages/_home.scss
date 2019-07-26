@@ -1,0 +1,249 @@
+.s-page {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #1E222B;
+}
+.block_nav {
+  background-color: #252a34;
+  min-width: 298px;
+  width: 298px;
+  padding-top: 40px;
+}
+.logo{
+  text-align: center;
+  margin-bottom: 60px;
+  img {
+    object-fit: contain;
+    max-width: 100%;
+
+  }
+}
+.block_details {
+  max-width: 817px;
+  width: 100%;
+  background-color: #1e222b;
+  padding: 30px 35px 5px 42px;
+  max-height: 100vh;
+  overflow: hidden;
+}
+/////////////////////////
+.bell {
+  position: absolute;
+  z-index: 9;
+  right: 28px;
+  top: 0;
+  cursor: pointer;
+  &__text {
+    position: absolute;
+    right: -9px;
+    top: 7px;
+    font-family: 'Roboto-Regular';
+    color: #fff;
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    background-color: #d32f2f;
+    padding: 3px;
+    border-radius: 50%;
+  }
+}
+/////
+.car-view {
+  position: relative;
+  &__car {
+
+  }
+}
+
+.car {
+  position: relative;
+  min-height: 497px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 18px;
+  &__title {
+    max-width: 200px;
+    color: #c6c6c6;
+    font-family: 'Roboto-Light';
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 22px;
+    text-transform: uppercase;
+    letter-spacing: 0.78px;
+  }
+  &__img {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    img {
+      max-width: 100%;
+    }
+  }
+  &__subtitle {
+    max-width: 200px;
+    color: #646363;
+    font-family: 'OpenSans-Light';
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+  }
+  .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+}
+
+/////
+
+
+
+.car-details {
+
+  &__wrap-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.details-item {
+  width: calc((100% - 48px) / 3);
+  border-radius: 8px;
+  background-color: #252a34;
+  padding: 17px 17px 24px 17px;
+  margin-bottom: 21px;
+  &__title {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 2px;
+    color: #BCBDBF;
+    font-family: 'Roboto-Regular';
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 19.14px;
+    letter-spacing: 0.16px;
+    margin-bottom: 14px;
+    img {
+      margin-right: 7px;
+      margin-top: 2px;
+    }
+  }
+  &__text {
+
+  }
+  &__num {
+    color: #ff8f00;
+    font-family: 'Roboto-Light';
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 19.14px;
+    letter-spacing: -1.38px;
+  }
+  &__str {
+    color: #ff8f00;
+    font-family: 'Roboto-Light';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 19.14px;
+  }
+}
+/// planner-item
+.car-planner {
+  border-bottom: 1px solid #2f343f;
+  padding-bottom: 26px;
+  margin-bottom: 24px;
+  &__wrap {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+ }
+
+.planner-item {
+  position: relative;
+  box-shadow: 0 0 24px rgba(0, 4, 7, 0.25);
+  border-radius: 15px;
+  background-color: #252a34;
+  max-width: 100px;
+  width: 100%;
+  padding: 25px 5px 30px 5px;
+  text-align: center;
+  margin-right: 23px;
+  img {
+    max-width: 30px;
+    object-fit: contain;
+    margin-bottom: 8px;
+  }
+  &__sign {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d32f2f;
+    border-radius: 50%;
+    color: #ffff;
+    font-size: 9px;
+  }
+  &__text {
+    color: #c6c6c6;
+    font-family: 'OpenSans-Regular';
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.28px;
+    overflow: hidden;
+  }
+}
+
+///car select
+.car-select {
+  position: relative;
+  box-shadow: inset 0 -14px 10px -10px rgba(0, 0, 0, 0.46);
+  text-align: center;
+  overflow: hidden;
+  padding-top: 30px;
+  margin-top: -36px;
+  svg {
+    margin-bottom: -6px;
+    filter: drop-shadow( 0px -6px 11px rgba(0, 0, 0, 0.46));
+    path {
+      fill: #1E222B;
+    }
+  }
+  &__wrap {
+    max-width: 200px;
+    position: absolute;
+    left: 50%;
+    top: 76%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+  &__text {
+    color: #ff8e01;
+    font-family: "Roboto-Light";
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: 0.39px;
+    margin: 0 14px;
+  }
+  &__arr-up {
+    width: 26px;
+    height: 26px;
+    background-color: #343840;
+    border-radius: 50%;
+    position: relative;
+    top: -3px;
+  }
+}
+

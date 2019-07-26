@@ -1,0 +1,214 @@
+.block_filter {
+  width: 100%;
+  background-color: #1E222B;
+  padding: 0 30px 0 40px;
+  max-height: 100vh;
+  overflow: hidden;
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #2f343f;
+    margin-bottom: 23px;
+  }
+  &__search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 33px;
+  }
+}
+.search {
+  margin-top: 24px;
+  margin-right: 7px;
+  &__form {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  input {
+    position: absolute;
+    left: 100%;
+    border-radius: 16px;
+    border: 1px solid #646363;
+    background-color: transparent;
+    outline: none;
+    padding: 5px 10px;
+    font-family: "OpenSans-Regular";
+    color: #c6c6c6;
+    font-size: 13px;
+    transition: transform .4s;
+    transform: translateX(1000px);
+  }
+  img {
+    margin-right: 5px;
+    cursor: pointer;
+  }
+}
+////tabs
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #2f343f;
+  margin-bottom: 23px;
+  &__item {
+    width: calc((100% - 45px) / 6);
+    &:last-child {
+      margin-right: 0;
+    }
+    a {
+      font-family: 'Roboto-Medium';
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 11.89px;
+      text-align: center;
+      border-radius: 18px;
+      padding: 11.5px 10px;
+      width: 100%;
+      border: 1px solid transparent;
+    }
+    &--all {
+      a {
+        background-color: #ff8f00;
+        color: #fff;
+      }
+    }
+    &--wash {
+      a {
+        color: #2254A1;
+        border-color: #2254A1;
+      }
+    }
+    &--azs {
+      a {
+        color: #8caf41;
+        border-color: #8caf41;
+      }
+    }
+    &--direct {
+      a {
+        color: #A66F4F;
+        border-color: #A66F4F;
+      }
+    }
+    &--to {
+      a {
+        color: #9F9653;
+        border-color: #9F9653;
+      }
+    }
+    &--notices {
+      a {
+        color: #fff;
+        border-color: #fff;
+      }
+    }
+  }
+}
+///form search
+.form-search {
+  max-width: 435px;
+  width: 100%;
+  &__form {
+    position: relative;
+  }
+  input {
+    background-color: transparent;
+    border-radius: 16px;
+    border: 1px solid #646363;
+    width: 100%;
+    padding: 4px 10px 4px 44px;
+    color: #fff;
+    font-family: 'Roboto-Regular';
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    letter-spacing: -0.56px;
+    transition: border-color .3s;
+    &:focus {
+      border-color: #ff8f00;
+    }
+  }
+  img {
+    position: absolute;
+    left: 17px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+
+///custom-select
+.filter-select {
+  margin-left: 6px;
+  display: flex;
+  align-items: center;
+}
+.custom-select {
+  border-radius: 16px;
+  border: 1px solid #ffffff;
+  position: relative;
+  padding: 4px 26px 4px 12px;
+  min-width: 137px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  transition: border-color .3s;
+  margin: 0 6px;
+  &:hover {
+    border-color: #FF8F00;
+  }
+  img {
+    position: absolute;
+    right: 11px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  input {
+    display: none;
+  }
+  &__text {
+    user-select: none;
+  }
+  &__text,&__label {
+    color: #c6c6c6;
+    font-family: 'Roboto-Regular';
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 22px;
+    letter-spacing: 0.36px;
+  }
+  &__label {
+    display: block;
+    transition: color .2s, background-color .2s;
+    border-radius: 8px;
+    padding: 1px 3px;
+    cursor: pointer;
+    &:hover {
+      background-color: rgba(12,13,17,.5);
+    }
+  }
+  &__form {
+    position: absolute;
+    z-index: 3;
+    top: 100%;
+    padding: 5px;
+    min-width: 100%;
+    left: 0;
+    transition: opacity .3s;
+    opacity: 0;
+    visibility: hidden;
+  }
+  &.active {
+    .custom-select__form {
+      opacity: 1;
+      visibility: visible;
+    }
+    img {
+      transform: rotate(180deg) translateY(62%);
+    }
+  }
+}

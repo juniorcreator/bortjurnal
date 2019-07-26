@@ -1,0 +1,17 @@
+.details-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 19px;
+  p {
+    color: #c6c6c6;
+    font-family: 'Roboto-Regular';
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    letter-spacing: 0.48px;
+  }
+  .btn {
+    margin-left: 20px;
+  }
+}

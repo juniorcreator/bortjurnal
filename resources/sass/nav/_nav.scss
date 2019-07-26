@@ -1,0 +1,141 @@
+.nav {
+  margin-top: 48px;
+  &__list {
+
+  }
+  &__item {
+    margin-bottom: 36px;
+    padding: 0 37px 0 32px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    position: relative;
+    &:last-child {
+      margin-bottom: 30px;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: -13px;
+      width: 4px;
+      height: 45px;
+      background-color: #FF8F00;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity .3s;
+    }
+    &:hover:before {
+      opacity: 1;
+      visibility: visible;
+    }
+    &--drop {
+      position: relative;
+      &:after {
+        content: "\2039";
+        position: absolute;
+        color: #848586;
+        right: 31px;
+        top: 1px;
+        transform: rotate(90deg) translateY(-3px);
+      }
+      &.open {
+        &:after {
+          transform: rotate(-90deg);
+        }
+        ul {
+          margin-left: 46px;
+          margin-top: 30px;
+          height: auto;
+        }
+      }
+    }
+    img {
+      margin-right: 25px;
+      max-width: 20px;
+      object-fit: contain;
+      width: 9%;
+    }
+    a {
+      color: #A4946A;
+      font-family: 'OpenSans-Regular';
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 0.32px;
+      width: 80%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    ul {
+      height: 0;
+      overflow: hidden;
+      width: 100%;
+      li {
+        margin-bottom: 13px;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 1;
+        letter-spacing: 0.28px;
+        font-family: 'OpenSans-Light';
+        a {
+          text-overflow: unset;
+          font-size: 14px;
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+    &.active {
+      a {
+        color: #FF8F00;
+        font-family: 'OpenSans-Bold';
+      }
+      &:before {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+
+  }
+}
+
+
+.nav-search {
+  padding-left: 31px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 90px;
+  img {
+    margin-right: 30px;
+  }
+  span {
+    position: absolute;
+    left: 0;
+    top: 6px;
+    pointer-events: none;
+    font-family: "OpenSans-Regular";
+    font-size: 16px;
+    color: #A4946A;
+    transition: opacity .3s;
+  }
+  input {
+    background-color: transparent;
+    color: #A4946A;
+    padding: 6px 0;
+    border: 1px solid transparent;
+    &:focus {
+      border-color: #A4946A;
+    }
+    &:focus ~ span {
+     opacity: 0;
+    }
+  }
+  &__form {
+    position: relative;
+  }
+  &.on span {
+    opacity: 0;
+  }
+}

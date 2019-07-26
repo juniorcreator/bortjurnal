@@ -1,0 +1,50 @@
+
+//normalize
+@import "normalize";
+
+// custom scroll
+@import "UI/custom_scroll_bar";
+
+//media query
+@import "query/query";
+
+//slick
+@import "UI/slick";
+
+//fonts
+@import "font/font";
+
+//select
+@import "select";
+
+//nav
+@import'nav/nav';
+
+//pages
+@import'pages/home';
+
+
+//UI
+@import'UI/btns';
+@import 'UI/headings';
+//UI
+
+//base
+@import'base';
+
+//blocks
+@import'blocks/user';
+@import'blocks/nav-search';
+@import'blocks/filter_nav';
+@import'blocks/block_filter';
+@import'blocks/status';
+
+//components
+@import'components/footer';
+@import'components/header';
+
+
+
+
+
+

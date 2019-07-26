@@ -1,0 +1,47 @@
+.user {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-bottom: 37px;
+  border-bottom: 1px solid #313742;
+  max-width: 236px;
+  width: 100%;
+  margin: 0 auto;
+  img {
+    width: 71px;
+    height: 71px;
+    object-fit: contain;
+    border-radius: 50%;
+  }
+  &__content {
+    margin-left: 30px;
+    padding-top: 8px;
+  }
+  &__name{
+    color: #ffffff;
+    font-family: 'OpenSans-Bold';
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 18px;
+  }
+  &__log{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logout {
+
+  }
+  &__menu {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: #3B3F48;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    transform: rotate(90deg);
+    cursor: pointer;
+    margin-left: 13px;
+  }
+}

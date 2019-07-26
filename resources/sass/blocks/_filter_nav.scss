@@ -1,0 +1,51 @@
+.filter-nav {
+  &__list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  &__item {
+    margin-right: 45px;
+    &:last-child {
+      margin-right: 0;
+    }
+    a {
+      color: #c6c6c6;
+      font-family: 'OpenSans-Regular';
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 22px;
+      position: relative;
+      padding: 27px 0 0 0;
+      transition: color .3s;
+      &:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        top: 0;
+        background-color: #ff8f00;
+        transition: opacity .3s;
+        opacity: 0;
+        visibility: hidden;
+      }
+      &:hover {
+        color: #FF8E01;
+        &:after {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+    &.active {
+      a {
+        color: #FF8E01;
+        font-family: 'OpenSans-SemiBold';
+        &:after {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+  }
+}
