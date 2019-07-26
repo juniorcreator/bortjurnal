@@ -2468,13 +2468,6 @@ body {
   background-color: #1E222B;
 }
 
-@media (max-width: 1190px) {
-  .home-page {
-    max-height: 100vh;
-    overflow: hidden;
-  }
-}
-
 span {
   display: inline-block;
 }
