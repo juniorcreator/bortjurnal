@@ -1781,7 +1781,7 @@ template {
 .nav__item a {
   padding: 9px 20px 9px 40px;
   position: relative;
-  color: #A4946A;
+  color: #C7C7C7;
   font-family: "OpenSans-Regular";
   font-size: 16px;
   font-weight: 400;
@@ -1901,14 +1901,14 @@ template {
   pointer-events: none;
   font-family: "OpenSans-Regular";
   font-size: 16px;
-  color: #A4946A;
+  color: #C7C7C7;
   -webkit-transition: opacity 0.3s;
   -o-transition: opacity 0.3s;
   transition: opacity 0.3s;
 }
 .nav-search input {
   background-color: transparent;
-  color: #A4946A;
+  color: #C7C7C7;
   padding: 6px 0 6px 15px;
   border: 1px solid transparent;
   width: 100%;
