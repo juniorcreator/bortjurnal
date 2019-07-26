@@ -2187,15 +2187,15 @@ template {
   outline: none;
   text-align: center;
   text-transform: capitalize;
-  -webkit-transition: background 0.3s;
-  -o-transition: background 0.3s;
-  transition: background 0.3s;
   position: relative;
   color: #c6c6c6;
   font-family: "OpenSans-Regular";
   font-size: 11px;
   font-weight: 400;
   cursor: pointer;
+  -webkit-transition: color 0.3s, background-color 0.3s;
+  -o-transition: color 0.3s, background-color 0.3s;
+  transition: color 0.3s, background-color 0.3s;
 }
 .btn--log {
   border-radius: 13px;
@@ -2203,6 +2203,10 @@ template {
   padding: 1px 21px;
   letter-spacing: 0.33px;
   line-height: 22px;
+}
+.btn--log:hover {
+  background-color: #fff;
+  color: #000;
 }
 .btn--add-car {
   padding: 11px 29px;
@@ -2412,6 +2416,13 @@ a {
           transform: rotate(90deg);
   cursor: pointer;
   margin-left: 13px;
+  -webkit-transition: background-color 0.3s, color 0.3s;
+  -o-transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s;
+}
+.user__menu:hover {
+  background-color: #fff;
+  color: #000;
 }
 
 .filter-nav {

@@ -4,19 +4,23 @@
   outline: none;
   text-align: center;
   text-transform: capitalize;
-  transition: background .3s;
   position: relative;
   color: #c6c6c6;
   font-family: 'OpenSans-Regular';
   font-size: 11px;
   font-weight: 400;
   cursor: pointer;
+  transition: color .3s, background-color .3s;
   &--log {
     border-radius: 13px;
     border: 1px solid #ffffff;
     padding: 1px 21px;
     letter-spacing: 0.33px;
     line-height: 22px;
+    &:hover {
+      background-color: #fff;
+      color: #000;
+    }
   }
   &--add-car {
     padding: 11px 29px;

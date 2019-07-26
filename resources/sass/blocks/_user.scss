@@ -43,5 +43,10 @@
     transform: rotate(90deg);
     cursor: pointer;
     margin-left: 13px;
+    transition: background-color .3s, color .3s;
+    &:hover {
+      background-color: #fff;
+      color: #000;
+    }
   }
 }
