@@ -2143,6 +2143,7 @@ template {
 .car__img-default img {
   position: absolute;
   max-width: 530px;
+  width: 100%;
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
