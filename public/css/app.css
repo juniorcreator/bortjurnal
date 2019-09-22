@@ -2077,6 +2077,7 @@ template {
 @media (max-width: 1190px) {
   .car-view .block_filter__nav {
     display: block;
+    border-bottom: none;
   }
   .car-view .filter-nav__item a:after {
     display: block;

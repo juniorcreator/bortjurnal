@@ -93,6 +93,7 @@
   @include md_1190 {
     .block_filter__nav {
       display: block;
+      border-bottom: none;
     }
     .filter-nav {
       &__item {
